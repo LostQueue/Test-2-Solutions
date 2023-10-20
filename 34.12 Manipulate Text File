@@ -1,0 +1,21 @@
+# Input the name of the text file
+file_name = input("Enter the name of the text file: ")
+
+# Open the file in 'r' mode to read existing content
+with open(file_name, 'r') as file:
+    # Read the three existing words from the file
+    word1 = file.readline().strip()
+    word2 = file.readline().strip()
+    word3 = file.readline().strip()
+
+# Form a new sentence
+sentence = f"{word1} {word2} {word3}"
+
+# Append the sentence to the end of the file
+with open(file_name, 'a') as file:
+    file.write(sentence + '\n')
+
+# Output the new file contents
+with open(file_name, 'r') as file:
+    contents = file.read()
+    print(contents)
