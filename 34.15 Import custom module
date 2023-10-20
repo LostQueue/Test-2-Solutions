@@ -1,0 +1,11 @@
+# Import the custom module pigAge
+import pigAge
+
+# Input the age of the pig
+pig_age = int(input("Enter the age of the pig: "))
+
+# Calculate the human equivalent age using the pigAge_converter() function
+human_age = pigAge.pigAge_converter(pig_age)
+
+# Output the human-equivalent age of the pig
+print(f"{pig_age} is {human_age} in human years")
