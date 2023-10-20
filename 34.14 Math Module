@@ -1,0 +1,14 @@
+import math
+
+# Input an integer
+num = int(input("Enter an integer: "))
+
+# Calculate the factorial
+factorial_value = math.factorial(num)
+
+# Check if the factorial is greater than 100
+is_greater_than_100 = factorial_value > 100
+
+# Output the factorial and the Boolean value
+print(factorial_value)
+print(is_greater_than_100)
