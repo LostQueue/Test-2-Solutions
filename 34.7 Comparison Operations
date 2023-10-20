@@ -1,0 +1,14 @@
+# Define the predefined list
+predef_list = [4, -27, 15, 33, -10]
+
+# Input the integer value to compare
+input_value = int(input("Enter an integer to compare: "))
+
+# Calculate the maximum value from the predefined list
+max_value = max(predef_list)
+
+# Compare the input value with the maximum value and output the result
+is_greater_than_max = input_value > max_value
+
+# Display the result in the specified format
+print(f"Greater Than Max? {is_greater_than_max}")
