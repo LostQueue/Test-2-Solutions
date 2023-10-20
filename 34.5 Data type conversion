@@ -1,0 +1,15 @@
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+num4 = int(input())
+num5 = int(input())
+
+intSum = num1 + num2 + num3 + num4 + num5
+
+floatSum=float(num1 + num2 + num3 + num4 + num5)
+
+strSum=str(num1)+str(num2)+str(num3)+str(num4)+str(num5)
+
+print("Integer:",intSum)
+print("Float:",floatSum)
+print("String:",strSum)
