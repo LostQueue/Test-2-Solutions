@@ -1,0 +1,23 @@
+# Define the dictionary of available items and their costs
+purchase = {
+    "bananas": 1.85,
+    "steak": 19.99,
+    "cookies": 4.52,
+    "celery": 2.81,
+    "milk": 4.34
+}
+
+# Input the grocery store item and the number of items purchased
+item = input("Enter the grocery store item: ").lower()  # Convert to lowercase for case-insensitive matching
+num_items = int(input("Enter the number of items purchased: "))
+
+# Calculate the total cost of the purchase based on the discount rules
+if num_items < 10:
+    total_cost = purchase[item] * num_items
+elif 10 <= num_items <= 20:
+    total_cost = (purchase[item] * num_items) * 0.95  # Apply 5% discount
+else:
+    total_cost = (purchase[item] * num_items) * 0.90  # Apply 10% discount
+
+# Display the chosen item and total purchase cost to two decimal places
+print(f"{item} ${total_cost:.2f}")
