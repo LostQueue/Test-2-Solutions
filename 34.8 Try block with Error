@@ -1,0 +1,17 @@
+# Define the list of frameworks
+frameworks = ["Django", "Flask", "CherryPy", "Bottle", "Web2Py", "TurboGears"]
+
+try:
+    # Input the integer index value
+    index_value = int(input("Enter an index value: "))
+    
+    # Attempt to retrieve the element at the specified index
+    selected_framework = frameworks[index_value]
+    
+    # Display the selected element
+    print(selected_framework)
+    
+except IndexError:
+    print("Error")
+except ValueError:
+    print("Error")
