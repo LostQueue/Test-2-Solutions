@@ -1,1 +1,14 @@
+# Input number of Ounces
+Ounces = int(input('Enter the number of ounces: '))
+
+# Calculations for Weights
+tons = Ounces // 32000
+Ounces = Ounces % 32000
+pounds = Ounces // 16
+Ounces = Ounces % 16
+
+# Display the converted vaules
+print("Tons:{}".format(tons))
+print("Pounds:{}".format(pounds))
+print("Ounces:{}".format(Ounces))
 
