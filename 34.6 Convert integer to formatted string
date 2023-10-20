@@ -1,0 +1,8 @@
+# Input the 9-digit student identification number
+student_id = int(input("Enter the 9-digit student identification number: "))
+
+# Convert the integer to a string and format it as specified
+formatted_id = f"{student_id // 1000000:03}-{(student_id // 10000) % 100:02}-{student_id % 10000:04}"
+
+# Display the formatted identification number
+print(formatted_id)
