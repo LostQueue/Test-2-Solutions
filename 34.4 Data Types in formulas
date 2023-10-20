@@ -1,0 +1,7 @@
+b1 = int(input())
+b2 = int(input())
+h = int(input())
+
+area = ((b1 + b2) / 2) * h
+
+print('Trapezoid area: {:.1f} square meters'.format(area))
