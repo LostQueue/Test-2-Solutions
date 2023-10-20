@@ -1,7 +1,10 @@
-b1 = int(input())
-b2 = int(input())
-h = int(input())
+# Input the base and height measurements of the trapezoid
+b1 = float(input("Enter the first base measurement (b1) in meters: "))
+b2 = float(input("Enter the second base measurement (b2) in meters: "))
+h = float(input("Enter the height measurement (h) in meters: "))
 
+# Calculate the area of the trapezoid
 area = ((b1 + b2) / 2) * h
 
-print('Trapezoid area: {:.1f} square meters'.format(area))
+# Output the area in the specified format
+print(f"Trapezoid area: {area:.1f} square meters")
