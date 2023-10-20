@@ -1,0 +1,24 @@
+# Input the water temperature in degrees Fahrenheit
+temperature = int(input("Enter the water temperature in degrees Fahrenheit: "))
+
+# Determine the water state based on the temperature
+if temperature < 33:
+    water_state = "Frozen"
+    safety_comment = "Watch out for ice!"
+elif 33 <= temperature <= 80:
+    water_state = "Cold"
+    safety_comment = None
+elif 80 < temperature <= 115:
+    water_state = "Warm"
+    safety_comment = None
+elif 115 < temperature <= 211:
+    water_state = "Hot"
+    safety_comment = None
+else:
+    water_state = "Boiling"
+    safety_comment = "Caution: Hot!"
+
+# Display the water state and optional safety comment
+print(water_state)
+if safety_comment:
+    print(safety_comment)
