@@ -5,3 +5,23 @@ index=int(input())
 dataTypeName=(type(various_data_types[index])).__name__
 
 print(f"Element {index}: {dataTypeName}")
+
+
+
+
+# Define the list of various data types
+various_data_types = [516, 112.49, True, "meow", ("Western", "Governors", "University"), {"apple": 1, "pear": 5}]
+
+# Input the index value
+index_value = int(input("Enter the index value (0 to 5): "))
+
+# Ensure that the index value is within the valid range
+if 0 <= index_value < len(various_data_types):
+    # Get the element at the specified index
+    element = various_data_types[index_value]
+    # Get the data type name using type() and .name attribute
+    data_type = type(element).__name__
+    # Display the data type in the specified format
+    print(f"Element {index_value}: {data_type}")
+else:
+    print("Invalid index value. Please enter a valid index within the range.")
