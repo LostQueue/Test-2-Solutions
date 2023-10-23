@@ -1,5 +1,5 @@
 # Input the water temperature in degrees Fahrenheit
-temperature = int(input("Enter the water temperature in degrees Fahrenheit: "))
+temperature = int(input())
 
 # Determine the water state based on the temperature
 if temperature < 33:
