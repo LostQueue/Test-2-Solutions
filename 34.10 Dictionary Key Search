@@ -12,14 +12,14 @@ stocks = {
 }
 
 # Input the number of shares to be purchased
-num_shares = int(input("Enter the number of shares to be purchased: "))
+num_shares = int(input())
 
 # Initialize the total cost
 total_cost = 0.0
 
 # Input and calculate the total cost of the selected stocks
 for _ in range(num_shares):
-    stock_selection = input("Enter the stock selection: ")
+    stock_selection = input()
     if stock_selection in stocks:
         total_cost += stocks[stock_selection]
     else:
