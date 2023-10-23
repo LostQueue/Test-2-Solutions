@@ -4,9 +4,9 @@ employeeB = 41.85
 employeeC = 32.67
 
 # Input the number of times each employee travels to the job site
-travels_employee_a = int(input("Enter the number of times Employee A travels to the job site: "))
-travels_employee_b = int(input("Enter the number of times Employee B travels to the job site: "))
-travels_employee_c = int(input("Enter the number of times Employee C travels to the job site: "))
+travels_employee_a = int(input())
+travels_employee_b = int(input())
+travels_employee_c = int(input())
 
 # Calculate the total distance traveled by each employee
 employeeAtotaldistance = employeeA * travels_employee_a
