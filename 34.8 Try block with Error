@@ -3,7 +3,7 @@ frameworks = ["Django", "Flask", "CherryPy", "Bottle", "Web2Py", "TurboGears"]
 
 try:
     # Input the integer index value
-    index_value = int(input("Enter an index value: "))
+    index_value = int(input())
     
     # Attempt to retrieve the element at the specified index
     selected_framework = frameworks[index_value]
