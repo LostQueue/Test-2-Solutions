@@ -1,5 +1,5 @@
 # Get the name of the text file from the user
-file_name = input("Enter the name of the text file: ")
+file_name = input()
 
 # Read the existing contents of the file
 try:
