@@ -8,8 +8,8 @@ purchase = {
 }
 
 # Input the grocery store item and the number of items purchased
-item = input("Enter the grocery store item: ").lower()  # Convert to lowercase for case-insensitive matching
-num_items = int(input("Enter the number of items purchased: "))
+item = input().lower()  # Convert to lowercase for case-insensitive matching
+num_items = int(input())
 
 # Calculate the total cost of the purchase based on the discount rules
 if num_items < 10:
