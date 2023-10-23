@@ -1,14 +1,12 @@
-# Input number of Ounces
-Ounces = int(input('Enter the number of ounces: '))
+# Get the input as an integer representing ounces
+input_ounces = int(input())
 
-# Calculations for Weights
-tons = Ounces // 32000
-Ounces = Ounces % 32000
-pounds = Ounces // 16
-Ounces = Ounces % 16
+# Calculate the number of tons, pounds, and remaining ounces
+tons = input_ounces // (16 * 2000)
+pounds = (input_ounces % (16 * 2000)) // 16
+remaining_ounces = input_ounces % 16
 
-# Display the converted vaules
-print("Tons:{}".format(tons))
-print("Pounds:{}".format(pounds))
-print("Ounces:{}".format(Ounces))
-
+# Output the converted values
+print("Tons:", tons)
+print("Pounds:", pounds)
+print("Ounces:", remaining_ounces)
