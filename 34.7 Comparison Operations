@@ -2,7 +2,7 @@
 predef_list = [4, -27, 15, 33, -10]
 
 # Input the integer value to compare
-input_value = int(input("Enter an integer to compare: "))
+input_value = int(input())
 
 # Calculate the maximum value from the predefined list
 max_value = max(predef_list)
